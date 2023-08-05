@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    change-log: "db.changelog/db.changelog.yml"
+
+telegram:
+  bot:
+    token: 6534380019:AAEmpcAvwro6_n4TR8UtDUwNUZJ2wgBvpQU
